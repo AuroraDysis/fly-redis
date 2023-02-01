@@ -1,6 +1,6 @@
 ARG REDIS_VERSION=7
 FROM redis:${REDIS_VERSION}-alpine
 
-COPY start-redis-server.sh /usr/bin/start-redis-server.sh
+COPY start-redis-server.sh /usr/local/bin/
 
-CMD ["/usr/bin/start-redis-server.sh"]
+CMD ["start-redis-server.sh"]
